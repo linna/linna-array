@@ -49,7 +49,7 @@ class CallableArrayObjectTest extends TestCase
         };
 
         $this->assertSame(1, $this->count($callableArray));
-        $this->assertSame(true, \is_callable($callableArray[0]));
+        $this->assertIsCallable($callableArray[0]);
     }
 
     /**
@@ -63,7 +63,7 @@ class CallableArrayObjectTest extends TestCase
         });
 
         $this->assertSame(1, $this->count($callableArray));
-        $this->assertSame(true, \is_callable($callableArray[0]));
+        $this->assertIsCallable($callableArray[0]);
     }
 
     /**
